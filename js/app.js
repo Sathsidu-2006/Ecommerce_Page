@@ -8,8 +8,7 @@ fetch("https://fakestoreapi.com/products").then(res => res.json()).then(data => 
         body += `
                     <div class="col">
                         <div class="card shadow-sm"> 
-                            <img src="${data[i].image}" alt="" class="bd-placeholder-img card-img-top" height="300"
-                                preserveAspectRatio="xMidYMid slice" role="img" width="100%">
+                            <img src="${data[i].image}" alt="" class="card-img-top" style="heigth: 200px; width: 100%; object-fit: contain;">
                                 <h5 class="card-text">${data[i].title}</h5>
                                 <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
                                     fill="#eceeef" dy=".3em">Thumbnail</text>
